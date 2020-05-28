@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  jupyterhub:
+    image: myjupyterhub
+    env_file:
+      - 'env.rc'
+    ports:
+      - '8000:8000'
